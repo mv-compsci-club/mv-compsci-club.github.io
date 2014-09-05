@@ -1,0 +1,180 @@
+/********************************************
+General Styling
+********************************************/
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: Ribbon;
+    src: url("../fonts/ribbon.otf");
+}
+@font-face {
+    font-family: Homestead;
+    src: url("../fonts/homestead.ttf");
+}
+@font-face {
+    font-family: Klinic Slab;
+    src: url("../fonts/klinicslab.otf");
+}
+@font-face {
+    font-family: Sintony;
+    src: url("../fonts/sintony.otf");
+}
+@font-face {
+    font-family: Tracks;
+    src: url("../fonts/track.otf");
+}
+@font-face {
+    font-family: Lobster;
+    src: url("../fonts/lobster.otf");
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Tracks, cursive;
+    font-weight: inherit;
+    line-height: 1.2;
+    margin: 0;
+}
+h1 {
+    transition: all .25s;
+    font-family: Ribbon, fantasy;
+    font-size: 6.854em;
+    margin-top: -.45em;
+    letter-spacing: 0;
+    width: 100%;
+}
+h1:hover {
+    letter-spacing: .1em;
+    text-shadow: 2px 2px 0 #e3cd3b;
+}
+h2 {
+    font-family: Homestead, fantasy;
+    font-size: 4.236em;
+}
+h3 {
+    font-size: 2.618em;
+}
+h4 {
+    font-size: 2.05em;
+}
+h5 {
+    font-size: 1.75em;
+    font-family: Klinic Slab, sans-serif;
+}
+small,
+.font_small {
+    font-size: 0.618em;
+    margin: 0;
+}
+a {
+    transition: all .25s;
+    margin: 0;
+    color: #333333;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #e3cd3b;
+}
+h3 a:hover,
+h4 a:hover,
+p a:hover {
+    color: #5a1a7a;
+    text-shadow: 2px 2px 0 #F0DB4F;
+}
+h1 a {
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #95a5a6;
+}
+h1 a:hover {
+    color: inherit;
+    text-shadow: 2px 2px 0 #e3cd3b;
+}
+p {
+    font-family: Sintony, sans-serif;
+    margin: 0;
+    font-size: 1.5em;
+}
+/********************************************
+Centering Styling
+********************************************/
+
+.outerN {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.middleN {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.innerN {
+    width: 100%;
+}
+
+/********************************************
+Header Styling
+********************************************/
+header
+{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(90,26,122);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+header img
+{
+    height: 100%;
+}
+/********************************************
+Footer Styling
+********************************************/
+
+footer
+{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(90,26,122);
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+
+/********************************************
+Body Styling
+********************************************/
+
+#overlay
+{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
