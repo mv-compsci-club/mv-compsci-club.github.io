@@ -118,8 +118,8 @@ window.onresize = resize;
 resize();
 
 (function loop() {
-    requestAnimFrame(loop);
-    render();
-    var imageDataURL = canvas.toDataURL();
-    document.getElementById("overlay").style.background = "transparent url('"+imageDataURL+"')";
+    //requestAnimFrame(loop);
+    //render();
+    //var imageDataURL = canvas.toDataURL();
+    //document.getElementById("overlay").style.background = "transparent url('"+imageDataURL+"')";
 })();
