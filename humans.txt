@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Oindril Dutta> -- <Developer | Designer> -- <@DuttaOindril>
+
+# THANKS
+
+    <Oindril Dutta>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JS
+    jQuery, Modernizr, Normalize

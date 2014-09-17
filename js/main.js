@@ -119,7 +119,6 @@ resize();
 
 (function loop() {
     //requestAnimFrame(loop);
+    //document.getElementById("overlay").style.background = "transparent url('"+canvas.toDataURL()+"')";
     //render();
-    //var imageDataURL = canvas.toDataURL();
-    //document.getElementById("overlay").style.background = "transparent url('"+imageDataURL+"')";
 })();

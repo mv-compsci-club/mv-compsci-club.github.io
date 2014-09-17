@@ -154,220 +154,23 @@ nav a:hover {
     padding-top: 20px;
 }
 
-/********************************************
-General Styling
-********************************************/
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 
-html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-}
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-weight: 400;
-    line-height: 1.45;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-}
-@font-face {
-    font-family: kankin;
-    src: url("../fonts/Kankin.otf");
-}
-@font-face {
-    font-family: corbert;
-    src: url("../fonts/Corbert.otf");
-}
-@font-face {
-    font-family: langdon;
-    src: url("../fonts/Langdon.otf");
-}
-@font-face {
-    font-family: urbanelegance;
-    src: url("../fonts/UrbanElegance.ttf");
-}
-@font-face {
-    font-family: ubuntu;
-    src: url("../fonts/Ubuntu.ttf");
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: corbert;
-    font-weight: inherit;
-    line-height: 1.2;
-    margin: 0;
-}
-h1 {
-    transition: all .25s;
-    font-family: langdon;
-    font-size: 6.854em;
-    margin-top: -.45em;
-    letter-spacing: 0;
-    width: 100%;
-}
-h1:hover {
-    letter-spacing: .1em;
-    text-shadow: 2px 2px 0 #e3cd3b;
-}
-h2 {
-    font-family: kankin;
-    font-size: 4.236em;
-}
-h3 {
-    font-size: 2.618em;
-}
-h4 {
-    font-size: 2.05em;
-}
-h5 {
-    font-size: 1.75em;
-    font-family: urbanelegance, sans-serif;
-}
-small,
-.font_small {
-    font-size: 0.618em;
-    margin: 0;
-}
-a {
-    transition: all .25s;
-    margin: 0;
-    color: #333333;
-    text-decoration: none;
-    text-shadow: 2px 2px 0 #e3cd3b;
-}
-h3 a:hover,
-h4 a:hover,
-p a:hover {
-    color: #5a1a7a;
-    text-shadow: 2px 2px 0 #F0DB4F;
-}
-h1 a {
-    margin: 0;
-    color: inherit;
-    text-decoration: none;
-    text-shadow: 2px 2px 0 #95a5a6;
-}
-h1 a:hover {
-    color: inherit;
-    text-shadow: 2px 2px 0 #e3cd3b;
-}
-p {
-    font-family: ubuntu, sans-serif;
-    margin: 0;
-    font-size: 1.5em;
-}
-/********************************************
-Centering Styling
-********************************************/
 
-.outerN {
-    display: table;
-    height: 100%;
-    width: 100%;
-}
-.middleN {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-}
-.innerN {
-    width: 100%;
-}
 
-/********************************************
-Header Styling
-********************************************/
-header
-{
-    transition: all .25s;
-    width: 100%;
-    height: 125px;
-    background-color: rgb(90,26,122);
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    color: white;
-    box-shadow: 0px 5px 0px #421a7a;
-}
 
-header img
-{
-    transition: all .25s;
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 125px;
-    padding: 0px 20px;
-}
 
-header img:hover
-{
-    background-color: rgba(0, 0, 0, 0.4);
-}
 
-header .navlink {
-    display: inline-block;
-    margin: 0px 30px;
-    padding: 10px;
-    vertical-align: top;
-    margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #e3cd3b;
-    text-shadow: 0px 0px 0 #000;
-    border-radius: 10px;
-}
 
-header .navlink:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    text-shadow: 2px 2px 5px #ddd;
-}
-/********************************************
-Footer Styling
-********************************************/
 
-footer
-{
-    transition: all .25s;
-    width: 100%;
-    height: 30px;
-    background-color: rgb(90,26,122);
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    color: white;
-    box-shadow: 0px -5px 0px #421a7a;
-}
 
-/********************************************
-Body Styling
-********************************************/
 
-#overlay
-{
-    margin-top: 140px;
-    margin-bottom: 50px;
-}
 
-#container
-{
-    width: 97.5%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 3px 3px 0px #333;
-}
+
+
+
 
 /* ==========================================================================
    Media Queries
