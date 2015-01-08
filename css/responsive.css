@@ -1,33 +1,4 @@
-/*@media screen and (orientation: portrait) {
-    #splashscreen .firstbanner img {
-        width: 100%;
-        height: auto;
-        margin: 2% 0;
-    }
-    #splashscreen .firstbanner {
-        width: 100%;
-        height: auto;
-    }
-    #splashscreen .overlay {
-        width: 100%;
-        height: auto;
-    }
-}
-@media screen and (orientation: landscape) {
-    #splashscreen .firstbanner img {
-        margin: 2% 0;
-        height: 87.5%;
-        width: auto;
-    }
-    #splashscreen .firstbanner {
-        height: 100%;
-        width: 100%;
-    }
-    #splashscreen .overlay {
-        width: 100%;
-        height: 100%;
-    }
-}
+/*
 @media screen and (max-width: 1200px) {
     #sidebar {
         display: none;
@@ -61,14 +32,12 @@
         -webkit-filter: none;
         -moz-filter: none;
         -ms-filter: none;
-        -o-filter: none;
         filter: none;
     }
     #splashscreen .firstbanner img:hover {
         -webkit-filter: none;
         -moz-filter: none;
         -ms-filter: none;
-        -o-filter: none;
         filter: none;
     }
     .schedule h5 {
