@@ -1,0 +1,39 @@
+/*
+test: test
+LANG: JAVA
+*/
+ 
+ 
+/*
+To adapt this program to a different testlem, find and replace all instances of
+test with the name of the testlem.
+*/
+import java.io.*;
+import java.util.*;
+ 
+public class test {
+     
+    void run() throws Exception{
+        //where you do the actual programming
+ 
+ 
+        //call in.next(), in.nextDouble(), in.nextBoolean(), etc. to retrieve something from the input file
+        //call out.print("Hello") or out.println("hello") to print something out to the output file
+    }
+    public static void main(String args[]) throws Exception {
+            //new test().run(); //read from stdin/stdout
+            new test("test.in", "test.out").run(); // or use file i/o
+    }
+ 
+    Scanner in; //the input object, works like any Scanner
+    PrintStream out; //the output object, works like System.out
+    test() throws Exception {
+            in = new Scanner(System.in)
+            out = System.out;
+    }
+    test(String is, String os) throws Exception {
+            in = new BufferedReader(new FileReader(new File(is)));
+            out = new PrintStream(new File(os));
+    }
+         
+}

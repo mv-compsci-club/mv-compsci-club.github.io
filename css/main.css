@@ -208,6 +208,7 @@ h5 {
     margin: 0;
 }
 h1 {
+    -webkit-transition: all .25s;
     transition: all .25s;
     font-family: langdon;
     font-size: 6.854em;
@@ -216,7 +217,7 @@ h1 {
     width: 100%;
 }
 h1:hover {
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     text-shadow: 2px 2px 0 #e3cd3b;
 }
 h2 {
@@ -239,14 +240,18 @@ small,
     margin: 0;
 }
 a {
+    -webkit-transition: all .25s;
     transition: all .25s;
     margin: 0;
     color: #333333;
     text-decoration: none;
     text-shadow: 2px 2px 0 #e3cd3b;
 }
+h2 a:hover,
 h3 a:hover,
 h4 a:hover,
+h5 a:hover,
+h6 a:hover,
 p a:hover {
     color: #5a1a7a;
     text-shadow: 2px 2px 0 #F0DB4F;
@@ -262,10 +267,47 @@ h1 a:hover {
     text-shadow: 2px 2px 0 #e3cd3b;
 }
 p {
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
     font-family: ubuntu, sans-serif;
     margin: 0;
     font-size: 1.5em;
 }
+#marker {
+    position: absolute;
+    top: 0px;
+}
+input, select, textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.08) inset;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-family: ubuntu, sans-serif;
+    font-size: 1em;
+}
+input:focus, textarea:focus, select:focus {
+    outline: 1px solid rgb(103, 0, 255);
+}
+.btn {
+    display: inline-block;
+    background: #333;
+    padding: 10px 30px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    font-size: 1.25em;
+}
+.btn:hover {
+    background: rgb(90, 10, 255);
+    color: #F0DB4F;
+    text-decoration: none;
+}
+
 /********************************************
 Centering Styling
 ********************************************/
@@ -287,11 +329,11 @@ Centering Styling
 /********************************************
 Header Styling
 ********************************************/
-header
-{
+header {
+    -webkit-transition: all .25s;
     transition: all .25s;
     width: 100%;
-    height: 125px;
+    height: 75px;
     background-color: rgb(90,26,122);
     display: block;
     position: fixed;
@@ -299,47 +341,65 @@ header
     left: 0;
     color: white;
     box-shadow: 0px 5px 0px #421a7a;
+    z-index: 3;
 }
-
-header img
-{
+header img {
+    position: relative
+    -webkit-transition: all .25s;
     transition: all .25s;
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 125px;
+    background-color: rgb(103, 0, 255);
+    height: 100px;
     padding: 0px 20px;
+    border: 5px solid #421a7a;
+    border-top: none;
+    box-sizing: border-box;
 }
-
-header img:hover
-{
-    background-color: rgba(0, 0, 0, 0.4);
+header img:hover {
+    background-color: rgb(90, 10, 255);
 }
-
-header .navlink {
+header .navlink,
+#dropdown .navlink {
     display: inline-block;
     margin: 0px 30px;
     padding: 10px;
     vertical-align: top;
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.3);
     color: #e3cd3b;
     text-shadow: 0px 0px 0 #000;
-    border-radius: 10px;
 }
-
-header .navlink:hover {
+header .navlink:hover,
+#dropdown .navlink:hover {
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    text-shadow: 2px 2px 5px #ddd;
+    text-shadow: 2px 2px 0px #333;
+    box-shadow: 2px 2px 0px #333;
+}
+#dropdown {
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    width: 97.5%;
+    max-width: 1000px;
+    height: 130px;
+    margin: 0 auto;
+    padding: 30px 0px;
+    background-color: rgb(177, 122, 230);
+    box-shadow: 3px 0px 0px #421a7a;
+    border-left: 3px solid #421a7a;
+    border-bottom: 3px solid #421a7a;
+    box-sizing: border-box;
+    z-index: 2;
 }
 /********************************************
 Footer Styling
 ********************************************/
 
-footer
-{
+footer {
+    -webkit-transition: all .25s;
     transition: all .25s;
     width: 100%;
-    height: 30px;
+    height: 20px;
     background-color: rgb(90,26,122);
     display: block;
     position: fixed;
@@ -347,28 +407,68 @@ footer
     left: 0;
     color: white;
     box-shadow: 0px -5px 0px #421a7a;
+    z-index: 3;
+}
+footer p {
+    font-size: 1em;
 }
 
 /********************************************
 Body Styling
 ********************************************/
 
-#overlay
-{
-    margin-top: 140px;
-    margin-bottom: 50px;
-}
-
-#container
-{
+#container {
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    margin: 110px auto 40px auto;
     width: 97.5%;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(220, 220, 220, 0.95);
     box-shadow: 3px 3px 0px #333;
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+canvas {
+    display: block;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+}
+#logindiv p {
+    font-size: 1.25em;
 }
 
+/********************************************
+column Styling
+********************************************/
+#cola {
+    width: 47.5%;
+    float: left;
+    margin: 0% 1.25%;
+    box-sizing: border-box;
+}
+#colb {
+    width: 47.5%;
+    float: right;
+    margin: 0% 1.25%;
+    box-sizing: border-box;
+}
+#colc {
+    width: 90%;
+    margin: 0% 5%;
+    padding: 0% 5%;
+    box-sizing: border-box;
+}
+.box {
+    width: 95%;
+    margin: 5% 2.5%;
+    padding: 2.5% 10%;
+    border: 3px solid #F0DB4F;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 0px #333;
+    background-color: rgb(245, 245, 245);
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -416,9 +516,7 @@ Body Styling
 
     .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #aaa;
     }
 
 /* ============
@@ -579,13 +677,13 @@ Body Styling
 
     p,
     h2,
-    h3 {
+    h4 {
         orphans: 3;
         widows: 3;
     }
 
     h2,
-    h3 {
+    h4 {
         page-break-after: avoid;
     }
 }
