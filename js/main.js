@@ -1,7 +1,60 @@
+/*=================================================================================
+Firebase Stuff
+=================================================================================*/
 var loggedin = false;
 var $diva = $("#logindiv");
 var $divb = $("#loggedindiv");
 
+function fb() {
+    var firebase = new Firebase("https://mvcs.firebaseio.com/");
+    firebase.once('value', function(firedata) {
+        var all = firedata.val();
+        var title = $('h1:first').html();
+        if(title == "about")
+        {
+
+        }
+        else if(title == "members")
+        {
+
+        }
+        else if(title == "welcome to mvcs!")
+        {
+
+        }
+        else if(title == "news")
+        {
+
+        }
+        else if(title == "branches")
+        {
+
+        }
+        else if(title == "lecture day")
+        {
+
+        }
+        else if(title == "creative day")
+        {
+
+        }
+        else if(title == "usaco")
+        {
+
+        }
+        /*-- Add more titles for later --*/
+        else if(title == "404! oops!")
+        {
+
+        }
+        firebase.set(all);
+    });
+}
+fb();
+
+/*=================================================================================
+General Animations
+=================================================================================*/
 $("#opena").hide();
 $("#openb").hide();
 $("#openc").hide();
@@ -60,7 +113,9 @@ $(function () {
     });
 });
 
-//===================================================================================
+/*=================================================================================
+Canvas Background Stuff
+=================================================================================*/
 
 var animate = true;
 var canvas = document.getElementById('draw');
