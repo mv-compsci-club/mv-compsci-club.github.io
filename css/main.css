@@ -470,8 +470,11 @@ Member Page Styling
 #settings {
     margin: 1%;
 }
-#score {
-
+#scrollr {
+    width: 100%;
+}
+#scrollr #left, #scrollr #right {
+    width: 50%;
 }
 #blog, #settings, #score {
     -webkit-transition: all .25s;
