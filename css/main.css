@@ -446,11 +446,9 @@ Member Page Styling
     width: 75%;
     margin-left: 12.5%;
 }
-#loggedindiv .row h3:first-child {
-    float: left;
-}
-#loggedindiv .row h3:last-child {
-    float: right;
+#loggedindiv .row h3 {
+    display: inline-block;
+    width: 45%;
 }
 #loggedindiv .row h4 {
     width: 45%;
@@ -473,7 +471,8 @@ Member Page Styling
 }
 #settingbox h5 {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 2.5px;
+    margin-right: 20px;
 }
 .scrollr {
     width: 100%;
