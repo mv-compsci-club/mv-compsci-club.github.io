@@ -457,11 +457,11 @@ Member Page Styling
     margin: 1% 2%;
     display: inline-block;
 }
+#gear {
+    height: 100%;
+}
 #settings {
     margin: 1%;
-}
-#settings:before {
-    background-image: url("../img/gear.png");
 }
 #score {
 
