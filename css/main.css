@@ -307,6 +307,30 @@ input:focus, textarea:focus, select:focus {
     color: #F0DB4F;
     text-decoration: none;
 }
+.scrollr {
+    width: 100%;
+}
+.scrollr img {
+    height: 45px;
+    margin: 1px;
+    display: inherit;
+}
+.scrollr .left, .scrollr .right {
+    width: 45%;
+    cursor: pointer;
+}
+.scrollr .left {
+    float: left;
+}
+.scrollr .left img {    
+    margin-left: 8.5%%;
+}
+.scrollr .right {
+    float: right;
+}
+.scrollr .right img {
+    margin-left: 72.5%;
+}
 
 /********************************************
 Centering Styling
@@ -448,7 +472,7 @@ Member Page Styling
 }
 #loggedindiv .row h3 {
     display: inline-block;
-    width: 45%;
+    width: 49%;
 }
 #loggedindiv .row h4 {
     width: 45%;
@@ -477,30 +501,6 @@ Member Page Styling
     display: inline-block;
     margin-left: 2.5px;
     margin-right: 20px;
-}
-.scrollr {
-    width: 100%;
-}
-.scrollr img {
-    height: 45px;
-    margin: 1px;
-    display: inherit;
-}
-.scrollr .left, .scrollr .right {
-    width: 45%;
-    cursor: pointer;
-}
-.scrollr .left {
-    float: left;
-}
-.scrollr .left img {    
-    margin-left: 7.5%;
-}
-.scrollr .right {
-    float: right;
-}
-.scrollr .right img {
-    margin-left: 72.5%;
 }
 #blog, #settings, #score {
     -webkit-transition: all .25s;
