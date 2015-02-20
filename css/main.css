@@ -460,6 +460,9 @@ Member Page Styling
 #settings {
     margin: 1%;
 }
+#settings:before {
+    background-image: url("img/gear.png");
+}
 #score {
 
 }
