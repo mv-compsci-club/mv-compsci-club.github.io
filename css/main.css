@@ -458,7 +458,8 @@ Member Page Styling
     display: inline-block;
 }
 #gear {
-    height: 100%;
+    height: 33px;
+    margin-right: 10px;
 }
 #settings {
     margin: 1%;
