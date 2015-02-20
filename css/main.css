@@ -481,6 +481,7 @@ Member Page Styling
 .scrollr .left, .scrollr .right {
     width: 45%;
     margin: 2% 0%;
+    cursor: pointer;
 }
 .scrollr .left {
     float: left;
@@ -497,6 +498,7 @@ Member Page Styling
     height: 31px;
     margin: 1px;
     display: inherit;
+    float: right;
 }
 #blog, #settings, #score {
     -webkit-transition: all .25s;
