@@ -457,6 +457,9 @@ Member Page Styling
     margin: 1% 2%;
     display: inline-block;
 }
+#loggedindiv .box {
+    margin: 2% 2.5%;
+}
 #gear {
     height: 31px;
     margin: 1px 5px;
@@ -480,7 +483,22 @@ Member Page Styling
     color: #5a1a7a;
     text-shadow: 2px 2px 0 #F0DB4F;
 }
-
+#loggedindiv #coming
+{
+    border-color: inherit;
+}
+#loggedindiv #ongoing
+{
+    border-color: #00FFFF;
+}
+#loggedindiv #attended
+{
+    border-color: #00FF00;
+}
+#loggedindiv #missed
+{
+    border-color: #FF000;
+}
 /********************************************
 column Styling
 ********************************************/
