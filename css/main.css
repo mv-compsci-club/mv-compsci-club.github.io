@@ -487,9 +487,10 @@ Member Page Styling
     float: left;
 }
 .scrollr .left img {
-    height: 31px;
+    height: 40px;
     margin: 1px;
     display: inherit;
+    margin-left: 15%;
 }
 .scrollr .right {
     float: right;
@@ -499,6 +500,7 @@ Member Page Styling
     margin: 1px;
     display: inherit;
     float: right;
+    margin-right: 15%;
 }
 #blog, #settings, #score {
     -webkit-transition: all .25s;
