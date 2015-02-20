@@ -438,6 +438,21 @@ canvas {
 #logindiv p {
     font-size: 1.25em;
 }
+/********************************************
+Member Page Styling
+********************************************/
+
+#loggedindiv .row {
+    width: 100%;
+}
+
+#loggedindiv .row h3:first-child {
+    float: left;
+}
+
+#loggedindiv .row h3:last-child {
+    float: right;
+}
 
 /********************************************
 column Styling
@@ -469,6 +484,7 @@ column Styling
     box-shadow: 2px 2px 0px #333;
     background-color: rgb(245, 245, 245);
 }
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
