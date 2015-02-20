@@ -459,6 +459,10 @@ Member Page Styling
     margin: 2% 2.5%;
     padding: 2.5% 4.5%;
 }
+#loggedindiv #cola .box
+{
+    padding: 2.5% 4.5% 1.5% 4.5%;
+}
 #loggedindiv .box hr {
     margin: 2% 0%;
 }
@@ -478,7 +482,7 @@ Member Page Styling
     width: 100%;
 }
 .scrollr img {
-    height: 40px;
+    height: 45px;
     margin: 1px;
     display: inherit;
 }
@@ -490,13 +494,13 @@ Member Page Styling
     float: left;
 }
 .scrollr .left img {    
-    margin-right: 70%;
+    margin-left: 7.5%;
 }
 .scrollr .right {
     float: right;
 }
 .scrollr .right img {
-    margin-left: 70%;
+    margin-left: 72.5%;
 }
 #blog, #settings, #score {
     -webkit-transition: all .25s;
