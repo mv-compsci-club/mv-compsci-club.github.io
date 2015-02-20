@@ -467,6 +467,19 @@ Member Page Styling
 #score {
 
 }
+#blog, #settings, #score {
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    margin: 0;
+    color: #333333;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #e3cd3b;
+    cursor: pointer;
+}
+#blog:hover, #settings:hover, #score:hover {
+    color: #5a1a7a;
+    text-shadow: 2px 2px 0 #F0DB4F;
+}
 
 /********************************************
 column Styling
