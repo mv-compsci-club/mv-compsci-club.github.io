@@ -316,8 +316,13 @@ input:focus, textarea:focus, select:focus {
     display: inherit;
 }
 .scrollr .left, .scrollr .right {
+    transition: all .25s;
     width: 45%;
     cursor: pointer;
+    background-color: rgba(0,0,0,0);
+}
+.scrollr .left:hover, .scrollr .right:hover {
+    background-color: rgba(0,0,0,0.5);
 }
 .scrollr .left {
     float: left;
