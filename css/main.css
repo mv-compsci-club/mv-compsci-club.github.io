@@ -471,26 +471,32 @@ Member Page Styling
 #settings {
     margin: 1%;
 }
-#scrollr {
+#settingbox h5 {
+    display: inline-block;
+    margin-left: 5px;
+}
+.scrollr {
     width: 100%;
 }
-#scrollr #left, #scrollr #right {
+.scrollr .left, .scrollr .right {
     width: 45%;
     margin: 2% 0%;
 }
-#scrollr #left {
+.scrollr .left {
     float: left;
 }
-#scrollr #left img {
+.scrollr .left img {
     height: 31px;
     margin: 1px;
+    display: inherit;
 }
-#scrollr #right {
+.scrollr .right {
     float: right;
 }
-#scrollr #right img {
+.scrollr .right img {
     height: 31px;
     margin: 1px;
+    display: inherit;
 }
 #blog, #settings, #score {
     -webkit-transition: all .25s;
