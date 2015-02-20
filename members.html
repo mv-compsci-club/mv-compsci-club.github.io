@@ -79,38 +79,38 @@ layout: default
 </div>
 -->
 <div id="loggedindiv">
+    <div class="row">
+        <h3 id="name">FirstN LastN</h3>
+        <h3 id="score"><a href="leaderboard.html">Score</a></h3>
+        <hr style="clear: both;">
+    </div>
+    <div class="row">
+        <h4 id="role">Role</h4>
+        <h4 id="blog"><a href="news.html">Blog</a></h4>
+    </div>
+    <div class="row">
+        <h4 id="gender">gender</h5>
+        <h4 id="grade">grade</h4>
+    </div>
+    <div class="row">
+        <h5 id="settings" onclick="expandit('settingbox'); return false;">
+            <img id="gear" src="img/gear.png">
+            Settings
+        </h5>
+        <div class="box" id="settingbox">
+            <input type="checkbox" checked>
+            <h5>Lecture Day</h5><br>
+            <input type="checkbox">
+            <h5>Creative Day</h5><br>
+            <input type="checkbox">
+            <h5>USACO</h5><br>
+            <input type="checkbox">
+            <h5>Blog Posts</h5><br>
+            <input class="btn" type="button" value="Save Settings">
+        </div>
+        <hr>
+    </div>
     <div id="cola">
-        <div class="row">
-            <h3 id="name">FirstN LastN</h3>
-            <h3 id="score"><a href="leaderboard.html">Score</a></h3>
-            <hr style="clear: both;">
-        </div>
-        <div class="row">
-            <h4 id="role">Role</h4>
-            <h4 id="blog"><a href="news.html">Blog</a></h4>
-        </div>
-        <div class="row">
-            <h4 id="gender">gender</h5>
-            <h4 id="grade">grade</h4>
-        </div>
-        <div class="row">
-            <h5 id="settings" onclick="expandit('settingbox'); return false;">
-                <img id="gear" src="img/gear.png">
-                Settings
-            </h5>
-            <div class="box" id="settingbox">
-                <input type="checkbox" checked>
-                <h5>Lecture Day</h5><br>
-                <input type="checkbox">
-                <h5>Creative Day</h5><br>
-                <input type="checkbox">
-                <h5>USACO</h5><br>
-                <input type="checkbox">
-                <h5>Blog Posts</h5><br>
-                <input class="btn" type="button" value="Save Settings">
-            </div>
-            <hr>
-        </div>
         <h3>Meetings</h3>
         <div class="box" id="coming">
             <h4>Incoming</h4>

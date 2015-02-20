@@ -478,6 +478,11 @@ Member Page Styling
 .scrollr {
     width: 100%;
 }
+.scrollr img {
+    height: 40px;
+    margin: 1px;
+    display: inherit;
+}
 .scrollr .left, .scrollr .right {
     width: 45%;
     margin: 2% 0%;
@@ -486,19 +491,13 @@ Member Page Styling
 .scrollr .left {
     float: left;
 }
-.scrollr .left img {
-    height: 40px;
-    margin: 1px;
-    display: inherit;
+.scrollr .left img {    
     margin-left: 15%;
 }
 .scrollr .right {
     float: right;
 }
 .scrollr .right img {
-    height: 31px;
-    margin: 1px;
-    display: inherit;
     float: right;
     margin-right: 15%;
 }
