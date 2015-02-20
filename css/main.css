@@ -484,21 +484,19 @@ Member Page Styling
 }
 .scrollr .left, .scrollr .right {
     width: 45%;
-    margin: 2% 0%;
     cursor: pointer;
 }
 .scrollr .left {
     float: left;
 }
 .scrollr .left img {    
-    margin-left: 15%;
+    margin-right: 70%;
 }
 .scrollr .right {
     float: right;
 }
 .scrollr .right img {
-    float: right;
-    margin-right: 15%;
+    margin-left: 70%;
 }
 #blog, #settings, #score {
     -webkit-transition: all .25s;
