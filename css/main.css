@@ -460,6 +460,9 @@ Member Page Styling
 #loggedindiv .box {
     margin: 2% 2.5%;
 }
+#loggedindiv .box hr {
+    margin: 2% 0%;
+}
 #gear {
     height: 31px;
     margin: 1px 5px;
