@@ -443,7 +443,8 @@ Member Page Styling
 ********************************************/
 
 #loggedindiv .row {
-    width: 100%;
+    width: 75%;
+    margin-left: 12.5%;
 }
 
 #loggedindiv .row h3:first-child {
