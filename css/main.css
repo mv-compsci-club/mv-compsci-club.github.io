@@ -474,7 +474,22 @@ Member Page Styling
     width: 100%;
 }
 #scrollr #left, #scrollr #right {
-    width: 50%;
+    width: 45%;
+    margin: 2% 0%;
+}
+#scrollr #left {
+    float: left;
+}
+#scrollr #left img {
+    height: 31px;
+    margin: 1px;
+}
+#scrollr #right {
+    float: right;
+}
+#scrollr #right img {
+    height: 31px;
+    margin: 1px;
 }
 #blog, #settings, #score {
     -webkit-transition: all .25s;
