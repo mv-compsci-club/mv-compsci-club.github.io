@@ -323,7 +323,7 @@ input:focus, textarea:focus, select:focus {
     border-radius: 25px;
     background-color: rgba(0,0,0,0);
 }
-.scrollhover {
+.scrollhover:hover {
     background-color: rgba(0,0,0,0.25);
 }
 .scrollr .left {
