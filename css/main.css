@@ -323,7 +323,7 @@ input:focus, textarea:focus, select:focus {
     border-radius: 25px;
     background-color: rgba(0,0,0,0);
 }
-.scrollr .left:hover, .scrollr .right:hover {
+.scrollhover {
     background-color: rgba(0,0,0,0.25);
 }
 .scrollr .left {
@@ -482,8 +482,8 @@ Member Page Styling
     width: 49%;
 }
 #loggedindiv .row h4 {
-    width: 45%;
-    margin: 1% 2%;
+    width: 49%;
+    margin: .5% 0%;
     display: inline-block;
 }
 #loggedindiv .box {
