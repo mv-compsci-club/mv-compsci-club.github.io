@@ -307,6 +307,37 @@ input:focus, textarea:focus, select:focus {
     color: #F0DB4F;
     text-decoration: none;
 }
+.scrollr {
+    width: 100%;
+}
+.scrollr img {
+    height: 45px;
+    margin: 1px;
+    display: inherit;
+}
+.scrollr .left, .scrollr .right {
+    transition: all .25s;
+    width: 45%;
+    margin: 0px 2.5%;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0);
+}
+.scrollhover:hover {
+    background-color: rgba(0,0,0,0.25);
+}
+.scrollr .left {
+    float: left;
+}
+.scrollr .left img {    
+    margin-left: 8.5%%;
+}
+.scrollr .right {
+    float: right;
+}
+.scrollr .right img {
+    margin-left: 72.5%;
+}
 
 /********************************************
 Centering Styling
@@ -438,7 +469,71 @@ canvas {
 #logindiv p {
     font-size: 1.25em;
 }
+/********************************************
+Member Page Styling
+********************************************/
 
+#loggedindiv .row {
+    width: 75%;
+    margin-left: 12.5%;
+}
+#loggedindiv .row h3 {
+    display: inline-block;
+    width: 49%;
+}
+#loggedindiv .row h4 {
+    width: 49%;
+    margin: .5% 0%;
+    display: inline-block;
+}
+#loggedindiv .box {
+    margin: 2% 2.5%;
+    padding: 2.5% 4.5%;
+}
+#loggedindiv #cola .box
+{
+    padding: 2.5% 4.5% 1.5% 4.5%;
+}
+#loggedindiv .box hr {
+    margin: 2% 0%;
+}
+#gear {
+    height: 31px;
+    margin: 1px 5px;
+}
+#settings {
+    margin: 1%;
+}
+#settingbox h5 {
+    display: inline-block;
+    margin-left: 2.5px;
+    margin-right: 20px;
+}
+#blog, #settings, #score {
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    margin: 0;
+    color: #333333;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #e3cd3b;
+    cursor: pointer;
+}
+#blog:hover, #settings:hover, #score:hover {
+    color: #5a1a7a;
+    text-shadow: 2px 2px 0 #F0DB4F;
+}
+#loggedindiv #ongoing
+{
+    border-color: #00FFFF;
+}
+#loggedindiv #attended
+{
+    border-color: #00FF00;
+}
+#loggedindiv #missed
+{
+    border-color: #FF0000;
+}
 /********************************************
 column Styling
 ********************************************/
@@ -469,6 +564,7 @@ column Styling
     box-shadow: 2px 2px 0px #333;
     background-color: rgb(245, 245, 245);
 }
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

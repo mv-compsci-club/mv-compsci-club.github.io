@@ -1,6 +1,7 @@
 /*=================================================================================
 Firebase Stuff
 =================================================================================*/
+$("#dropdown").hide();
 var loggedin = false;
 var $diva = $("#logindiv");
 var $divb = $("#loggedindiv");
@@ -12,11 +13,14 @@ function fb() {
         var title = $('h1:first').html();
         if(title == "about")
         {
-
+            $("#opena").hide();
+            $("#openc").hide();
+            $("#opend").hide();
         }
         else if(title == "members")
         {
-
+            $("#signup").hide();
+            $("#settingbox").hide();
         }
         else if(title == "welcome to mvcs!")
         {
@@ -55,13 +59,6 @@ fb();
 /*=================================================================================
 General Animations
 =================================================================================*/
-$("#opena").hide();
-$("#openb").hide();
-$("#openc").hide();
-$("#opend").hide();
-$("#signup").hide();
-$("#dropdown").hide();
-
 var focus = (document.URL).substring((document.URL).indexOf("f=")+2, (document.URL).indexOf("f=")+3);
 
 if(focus == "l")
