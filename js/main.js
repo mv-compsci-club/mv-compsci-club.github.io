@@ -72,7 +72,7 @@ function expandit(idname) {
     var $divs = $("#"+idname);
     if ($divs.is(":hidden"))
     {
-        $divs.slideDown("slow");
+        $divs.slideDown("fast");
         if(idname == "dropdown")
             $("#container").css("margin-top", 225);
         $divs.find("input:first-of-type").focus();
