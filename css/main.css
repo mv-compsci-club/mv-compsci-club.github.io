@@ -395,9 +395,8 @@ header .navlink,
     padding: 10px;
     vertical-align: top;
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
     color: #e3cd3b;
-    text-shadow: 0px 0px 0 #000;
+    text-decoration: underline #f00;
 }
 header .navlink:hover,
 #dropdown .navlink:hover {
