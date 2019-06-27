@@ -229,6 +229,7 @@ h3 {
 }
 h4 {
     font-size: 2.05em;
+    font-weight: 700;
 }
 h5 {
     font-size: 1.75em;
@@ -241,10 +242,10 @@ small,
 }
 a {
     -webkit-transition: all .25s;
-    transition: all .25s;
+    transition: all .25s ease-in;
     margin: 0;
-    color: #e3cd3b;
-    text-decoration: underline #f00;
+    color: #0066ff;
+    text-decoration: none;
 }
 h2 a:hover,
 h3 a:hover,
@@ -253,7 +254,7 @@ h5 a:hover,
 h6 a:hover,
 p a:hover {
     color: #5a1a7a;
-    text-shadow: 2px 2px 0 #F0DB4F;
+    text-decoration: underline #F0DB4F;
 }
 h1 a {
     margin: 0;
@@ -395,13 +396,14 @@ header .navlink,
     vertical-align: top;
     margin-top: 10px;
     color: #e3cd3b;
-    text-decoration: underline #f00;
+    text-decoration: none;
 }
 header .navlink:hover,
 #dropdown .navlink:hover {
     background-color: rgba(0, 0, 0, 0.6);
     text-shadow: 2px 2px 0px #333;
     box-shadow: 2px 2px 0px #333;
+    border-radius: 5px;
 }
 #dropdown {
     position: fixed;
