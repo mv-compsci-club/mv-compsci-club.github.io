@@ -244,8 +244,7 @@ a {
     transition: all .25s;
     margin: 0;
     color: #333333;
-    text-decoration: none;
-    text-shadow: 2px 2px 0 #e3cd3b;
+    text-decoration: underline #f00;
 }
 h2 a:hover,
 h3 a:hover,
