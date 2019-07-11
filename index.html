@@ -9,15 +9,15 @@ body, html {
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  opacity: 0.95;
+  opacity: 1;
   background-attachment: fixed;
   background-position: center;
-  background-size: 1600px;
--repeat: no-repeat;
-
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 .bgimg-1 {
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/bg.jpg");
   height: 50%;
 }
 
@@ -34,7 +34,7 @@ body, html {
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 30%;
   width: 100%;
   text-align: center;
   color: #0f0;
