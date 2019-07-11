@@ -55,3 +55,12 @@ setInterval(function() {
 	});
 	$('html, body').animate({scrollTop: $(document).height()}, 'slow');
 },17280);
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
