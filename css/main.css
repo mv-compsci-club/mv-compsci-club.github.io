@@ -32,7 +32,7 @@ hr {
     padding: 0;
 }
 
-audio,
+audio
 canvas,
 img,
 video {
@@ -83,18 +83,6 @@ textarea {
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
-}
-
-.topnav img {
-    position: relative
-    -webkit-transition: all .25s;
-    transition: all .25s;
-    background-color: rgb(103, 0, 255);
-    height: 100px;
-    padding: 0px 20px;
-    border: 5px solid #421a7a;
-    border-top: none;
-    box-sizing: border-box;
 }
 
 .topnav .icon {
