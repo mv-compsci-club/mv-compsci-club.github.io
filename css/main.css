@@ -116,7 +116,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 1vw/1vw Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -188,6 +188,7 @@ nav a:hover {
 
 .main article h1 {
     font-size: 2em;
+    font-size: 2vw;
 }
 
 .main aside {
@@ -218,6 +219,7 @@ html {
     margin: 0;
     padding: 0;
     font-size: 1em;
+    font-size: 1vw;
 }
 body {
     width: 100%;
@@ -266,6 +268,7 @@ h1 {
     transition: all .25s;
     font-family: langdon;
     font-size: 6.854em;
+    font-size: 4vw;
     margin-top: -.45em;
     letter-spacing: 0;
     width: 100%;
@@ -277,12 +280,15 @@ h1:hover {
 h2 {
     font-family: kankin;
     font-size: 4.236em;
+    font-size:4.236vw;
 }
 h3 {
     font-size: 2.618em;
+    font-size: 2.618vw;
 }
 h4 {
     font-size: 2.05em;
+    font-size: 2.05vw;
     font-weight: 700;
 }
 h5 {
@@ -307,8 +313,8 @@ h4 a:hover,
 h5 a:hover,
 h6 a:hover,
 p a:hover {
-    color: #5a1a7a;
-    text-decoration: underline #F0DB4F;
+    text-decoration: underline #0066ff;
+    letter-spacing: 0.05em;
 }
 h1 a {
     margin: 0;
