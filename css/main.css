@@ -111,6 +111,93 @@ textarea {
   }
 }
 
+
+/* ===== Button Styles ==================================================
+   Author: Richard Luo
+   ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+button.snip0059 {
+  font-family: 'Raleway', Arial, sans-serif;
+  border: none;
+  background-color: #000000;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  padding: 15px 30px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+button.snip0059:before {
+  content: '';
+  display: block;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 50%;
+  right: 50%;
+  background-color: #ffffff;
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
+  border-right: 2px solid rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+button.snip0059:hover,
+button.snip0059.hover {
+  color: #ffffff;
+  -webkit-animation: flashText 0.5s;
+  animation: flashText 0.5s;
+}
+button.snip0059:hover:before,
+button.snip0059.hover:before {
+  left: 12px;
+  right: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.8;
+}
+button.snip0059:active:before {
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+button.snip0059.blue {
+  background-color: #49c5ff;
+}
+@-webkit-keyframes flashText {
+  0% {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@keyframes flashText {
+  0% {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
