@@ -511,7 +511,7 @@ header {
     -webkit-transition: all .25s;
     transition: all .25s;
     width: 100%;
-    height: 8vh;
+    height: 9vh;
     background-color: rgb(90,26,122);
     display: block;
     position: fixed;
@@ -526,7 +526,7 @@ header img {
     -webkit-transition: all .25s;
     transition: all .25s;
     background-color: rgb(103, 0, 255);
-    height: 10vh;
+    height: 13vh;
     padding: 0px 20px;
     border: 5px solid #421a7a;
     border-top: none;
@@ -568,6 +568,13 @@ header .navlink:hover,
     border-bottom: 3px solid #421a7a;
     box-sizing: border-box;
     z-index: 2;
+}
+
+/* Hide the Nav Bar on Mobile */
+@media screen and (max-width: 600px) {
+    header img {
+        display: none;
+    }
 }
 /********************************************
 Footer Styling
