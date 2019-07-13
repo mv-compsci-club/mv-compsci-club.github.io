@@ -765,7 +765,7 @@ Member Page Styling
     border-color: #FF0000;
 }
 /********************************************
-column Styling
+Column Styling
 ********************************************/
 #cola {
     width: 47.5%;
@@ -786,8 +786,8 @@ column Styling
     box-sizing: border-box;
 }
 .box {
-    width: 95%;
-    margin: 5% 2.5%;
+    width: 85%;
+    margin: 5vw auto;
     padding: 2.5% 10%;
     border: 3px solid #F0DB4F;
     box-sizing: border-box;
