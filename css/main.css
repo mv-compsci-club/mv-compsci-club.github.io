@@ -65,14 +65,12 @@ textarea {
 .snip1515 {
   font-family: 'Open Sans', Arial, sans-serif;
   position: relative;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #000000;
+  margin: 0.5rem;
+  width: 20vw;
+  color: #000;
   text-align: center;
   line-height: 1.4em;
-  font-size: 14px;
+  font-size: 1rem;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   float: left;
 }
@@ -87,8 +85,8 @@ textarea {
   width: 80%;
   z-index: 1;
   position: relative;
-  padding: 10px;
-  border: 2px solid #e8b563;
+  padding: 0.5rem;
+  border: .2rem solid #e8b563;
   margin-top: 1.5vh;
 }
 
