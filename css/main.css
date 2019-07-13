@@ -73,7 +73,7 @@ textarea {
   text-align: center;
   line-height: 1.4em;
   font-size: 14px;
-  box-shadow: none !important;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .snip1515 * {
@@ -88,6 +88,7 @@ textarea {
   position: relative;
   padding: 10px;
   border: 2px solid #e8b563;
+  margin-top: 1.5vh;
 }
 
 .snip1515 .profile-image img {
