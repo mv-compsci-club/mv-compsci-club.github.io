@@ -13,6 +13,6 @@ Big thanks to the MVCS Team and our advisor, Mr. DeRuiter.
     jQuery, Modernizr, Normalize
                             
 /* SITE */                  
-    Last update: 2019/06/29                          
+    Last update: 2019/07/12                          
     Standards: HTML5, CSS3, JS
     Components: Modernizr, jQuery, Normalize
