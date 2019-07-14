@@ -56,97 +56,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ===== Profile Cards ==================================================
-   ========================================================================== */
-
-@import url(https://fonts.googleapis.com/css?family=Open+sans);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
-.snip1515 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  position: relative;
-  margin: 0.5rem;
-  width: 20vw;
-  color: #000;
-  text-align: center;
-  line-height: 1.4em;
-  font-size: 1rem;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  float: left;
-}
-
-.snip1515 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.snip1515 .profile-image {
-  display: inline-block;
-  width: 80%;
-  z-index: 1;
-  position: relative;
-  padding: 0.5rem;
-  border: .2rem solid #e8b563;
-  margin-top: 1.5vh;
-}
-
-.snip1515 .profile-image img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-.snip1515 figcaption {
-  width: 100%;
-  background-color: #F2F2F2;
-  color: #555;
-  padding: 125px 25px 25px;
-  margin-top: -100px;
-  display: inline-block;
-}
-
-.snip1515 h3,
-.snip1515 h4,
-.snip1515 p {
-  margin: 0 0 5px;
-}
-
-.snip1515 h3 {
-  font-weight: 600;
-  font-size: 1.3em;
-  font-family: 'Playfair Display', Arial, sans-serif;
-}
-
-.snip1515 h4 {
-  color: #8c8c8c;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
-.snip1515 p {
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  opacity: 0.9;
-}
-
-.snip1515 .icons {
-  text-align: center;
-  width: 100%;
-}
-
-.snip1515 i {
-  padding: 10px 2px;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: normal;
-  color: #e8b563;
-  opacity: 0.75;
-}
-
-.snip1515 i:hover {
-  opacity: 1;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
 
 /* ===== Button Styles ==================================================
    Author: Richard Luo
@@ -154,86 +63,94 @@ textarea {
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 button.snip0059 {
-  font-family: 'Raleway', Arial, sans-serif;
-  border: none;
-  background-color: #000000;
-  border-radius: 3px;
-  box-shadow: 0 4px 12px #49c5ff;
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-  padding: 2vh 3vw;
-  display: inline-block;
-  margin: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 1.3vw;
-  outline: none;
-  position: relative;
-  overflow: hidden;
+    font-family: 'Raleway', Arial, sans-serif;
+    border: none;
+    background-color: #000000;
+    border-radius: 3px;
+    box-shadow: 0 4px 12px #49c5ff;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    padding: 2vh 3vw;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.3vw;
+    outline: none;
+    position: relative;
+    overflow: hidden;
 }
+
 button.snip0059:before {
-  content: '';
-  display: block;
-  border-radius: 3px;
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 50%;
-  right: 50%;
-  background-color: #ffffff;
-  border-left: 2px solid rgba(255, 255, 255, 0.8);
-  border-right: 2px solid rgba(255, 255, 255, 0.8);
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+    content: '';
+    display: block;
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 50%;
+    right: 50%;
+    background-color: #ffffff;
+    border-left: 2px solid rgba(255, 255, 255, 0.8);
+    border-right: 2px solid rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
 }
+
 button.snip0059:hover,
 button.snip0059.hover {
-  color: #ffffff;
-  -webkit-animation: flashText 0.5s;
-  animation: flashText 0.5s;
+    color: #ffffff;
+    -webkit-animation: flashText 0.5s;
+    animation: flashText 0.5s;
 }
+
 button.snip0059:hover:before,
 button.snip0059.hover:before {
-  left: 12px;
-  right: 12px;
-  background-color: rgba(255, 255, 255, 0.1);
-  opacity: 0.8;
+    left: 12px;
+    right: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 0.8;
 }
+
 button.snip0059:active:before {
-  background-color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
 }
+
 button.snip0059.blue {
-  background-color: #49c5ff;
+    background-color: #49c5ff;
 }
+
 @-webkit-keyframes flashText {
-  0% {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  50% {
-    color: transparent;
-  }
-  100% {
-    color: #fff;
-  }
+    0% {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: #fff;
+    }
 }
+
 @keyframes flashText {
-  0% {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  50% {
-    color: transparent;
-  }
-  100% {
-    color: #fff;
-  }
+    0% {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: #fff;
+    }
 }
+
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
@@ -247,6 +164,7 @@ body {
     width: 90%;
     margin: 0 5%;
 }
+
 
 /* ===================
     ALL: Orange Theme
@@ -271,6 +189,7 @@ body {
     color: white;
 }
 
+
 /* ==============
     MOBILE: Menu
    ============== */
@@ -284,11 +203,9 @@ nav a {
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
-
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-
     color: white;
     background: #e44d26;
 }
@@ -302,6 +219,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
 /* ==============
     MOBILE: Main
    ============== */
@@ -312,7 +230,6 @@ nav a:hover {
 
 .main article h1 {
     font-size: 2em;
-    font-size: 2vw;
 }
 
 .main aside {
@@ -325,6 +242,7 @@ nav a:hover {
     padding: 20px 0;
 }
 
+
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -332,6 +250,7 @@ nav a:hover {
 .ie7 .title {
     padding-top: 20px;
 }
+
 
 /********************************************
 General Styling
@@ -342,9 +261,9 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 1em;
-    font-size: 1vw;
+    font-size: 1.2rem;
 }
+
 body {
     width: 100%;
     height: 100%;
@@ -357,26 +276,32 @@ body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
 }
+
 @font-face {
     font-family: kankin;
     src: url("../fonts/Kankin.otf");
 }
+
 @font-face {
     font-family: corbert;
     src: url("../fonts/Corbert.otf");
 }
+
 @font-face {
     font-family: langdon;
     src: url("../fonts/Langdon.otf");
 }
+
 @font-face {
     font-family: urbanelegance;
     src: url("../fonts/UrbanElegance.ttf");
 }
+
 @font-face {
     font-family: ubuntu;
     src: url("../fonts/ProductSans.ttf");
 }
+
 h1,
 h2,
 h3,
@@ -387,6 +312,7 @@ h5 {
     line-height: 1.2;
     margin: 0;
 }
+
 h1 {
     -webkit-transition: all .25s;
     transition: all .25s;
@@ -397,33 +323,40 @@ h1 {
     letter-spacing: 0;
     width: 100%;
 }
+
 h1:hover {
     letter-spacing: .05em;
     text-shadow: 2px 2px 0 #e3cd3b;
 }
+
 h2 {
     font-family: kankin;
     font-size: 4.236em;
-    font-size:4.236vw;
+    font-size: 4.236vw;
 }
+
 h3 {
     font-size: 2.618em;
     font-size: 2.618vw;
 }
+
 h4 {
     font-size: 2.05em;
     font-size: 2.05vw;
     font-weight: 700;
 }
+
 h5 {
     font-size: 1.75em;
     font-family: urbanelegance, sans-serif;
 }
+
 small,
 .font_small {
     font-size: 0.618em;
     margin: 0;
 }
+
 a {
     -webkit-transition: all .25s;
     transition: all .25s ease-in;
@@ -431,6 +364,7 @@ a {
     color: #0066ff;
     text-decoration: none;
 }
+
 h2 a:hover,
 h3 a:hover,
 h4 a:hover,
@@ -440,16 +374,23 @@ p a:hover {
     text-decoration: underline #0066ff;
     letter-spacing: 0.05em;
 }
+
 h1 a {
     margin: 0;
     color: inherit;
     text-decoration: none;
     text-shadow: 2px 2px 0 #95a5a6;
 }
+
 h1 a:hover {
     color: inherit;
     text-shadow: 2px 2px 0 #e3cd3b;
 }
+
+li {
+    text-align: left;
+}
+
 p {
     transition: 0.3s all;
     -webkit-transition: 0.3s all;
@@ -458,22 +399,30 @@ p {
     margin: 0;
     font-size: 1.4rem;
 }
+
 #marker {
     position: absolute;
     top: 0px;
 }
-input, select, textarea {
+
+input,
+select,
+textarea {
     padding: 10px 12px;
     border: 1px solid #ccc;
-    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.08) inset;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.08) inset;
     margin: 5px 0;
     box-sizing: border-box;
     font-family: ubuntu, sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
 }
-input:focus, textarea:focus, select:focus {
+
+input:focus,
+textarea:focus,
+select:focus {
     outline: 1px solid rgb(103, 0, 255);
 }
+
 .btn {
     display: inline-block;
     background: #333;
@@ -486,42 +435,53 @@ input:focus, textarea:focus, select:focus {
     -moz-transition: 0.3s all;
     font-size: 1.25em;
 }
+
 .btn:hover {
     background: rgb(90, 10, 255);
     color: #F0DB4F;
     text-decoration: none;
 }
+
 .scrollr {
     width: 100%;
 }
+
 .scrollr img {
     height: 45px;
     margin: 1px;
     display: inherit;
 }
-.scrollr .left, .scrollr .right {
+
+.scrollr .left,
+.scrollr .right {
     transition: all .25s;
     width: 45%;
     margin: 0px 2.5%;
     cursor: pointer;
     border-radius: 25px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
+
 .scrollhover:hover {
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0, 0, 0, 0.25);
 }
+
 .scrollr .left {
     float: left;
 }
-.scrollr .left img {    
+
+.scrollr .left img {
     margin-left: 8.5%%;
 }
+
 .scrollr .right {
     float: right;
 }
+
 .scrollr .right img {
     margin-left: 72.5%;
 }
+
 
 /********************************************
 Centering Styling
@@ -532,24 +492,28 @@ Centering Styling
     height: 100%;
     width: 100%;
 }
+
 .middleN {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
 }
+
 .innerN {
     width: 100%;
 }
 
+
 /********************************************
 Header Styling
 ********************************************/
+
 header {
     -webkit-transition: all .25s;
     transition: all .25s;
     width: 100%;
     height: 9vh;
-    background-color: rgb(90,26,122);
+    background-color: rgb(90, 26, 122);
     display: block;
     position: fixed;
     top: 0;
@@ -558,9 +522,9 @@ header {
     box-shadow: 0px 2px 0px #421a7a;
     z-index: 3;
 }
+
 header img {
-    position: relative
-    -webkit-transition: all .25s;
+    position: relative -webkit-transition: all .25s;
     transition: all .25s;
     background-color: rgb(103, 0, 255);
     height: 13vh;
@@ -569,9 +533,11 @@ header img {
     border-top: none;
     box-sizing: border-box;
 }
+
 header img:hover {
     background-color: rgb(90, 10, 255);
 }
+
 header .navlink,
 #dropdown .navlink {
     display: inline-block;
@@ -582,6 +548,7 @@ header .navlink,
     color: #e3cd3b;
     text-decoration: none;
 }
+
 header .navlink:hover,
 #dropdown .navlink:hover {
     background-color: rgba(0, 0, 0, 0.6);
@@ -589,6 +556,7 @@ header .navlink:hover,
     box-shadow: 2px 2px 0px #333;
     border-radius: 5px;
 }
+
 #dropdown {
     position: fixed;
     top: 80px;
@@ -607,6 +575,7 @@ header .navlink:hover,
     z-index: 2;
 }
 
+
 /********************************************
 Footer Styling
 ********************************************/
@@ -616,7 +585,7 @@ footer {
     transition: all .25s;
     width: 100%;
     height: 20px;
-    background-color: rgb(90,26,122);
+    background-color: rgb(90, 26, 122);
     display: block;
     position: fixed;
     bottom: 0;
@@ -625,9 +594,11 @@ footer {
     box-shadow: 0px -5px 0px #421a7a;
     z-index: 3;
 }
+
 footer p {
     font-size: 1em;
 }
+
 
 /********************************************
 Body Styling
@@ -645,15 +616,19 @@ Body Styling
     position: relative;
     display: block;
 }
+
 canvas {
     display: block;
     z-index: 0;
     position: fixed;
     top: 0;
 }
+
 #logindiv p {
     font-size: 1.25em;
 }
+
+
 /********************************************
 Member Page Styling
 ********************************************/
@@ -662,39 +637,49 @@ Member Page Styling
     width: 75%;
     margin-left: 12.5%;
 }
+
 #loggedindiv .row h3 {
     display: inline-block;
     width: 49%;
 }
+
 #loggedindiv .row h4 {
     width: 49%;
     margin: .5% 0%;
     display: inline-block;
 }
+
 #loggedindiv .box {
     margin: 2% 2.5%;
     padding: 2.5% 4.5%;
 }
-#loggedindiv #cola .box
-{
+
+#loggedindiv #cola .box {
     padding: 2.5% 4.5% 1.5% 4.5%;
 }
+
 #loggedindiv .box hr {
     margin: 2% 0%;
 }
+
 #gear {
     height: 31px;
     margin: 1px 5px;
 }
+
 #settings {
     margin: 1%;
 }
+
 #settingbox h5 {
     display: inline-block;
     margin-left: 2.5px;
     margin-right: 20px;
 }
-#blog, #settings, #score {
+
+#blog,
+#settings,
+#score {
     -webkit-transition: all .25s;
     transition: all .25s;
     margin: 0;
@@ -703,63 +688,71 @@ Member Page Styling
     text-shadow: 2px 2px 0 #e3cd3b;
     cursor: pointer;
 }
-#blog:hover, #settings:hover, #score:hover {
+
+#blog:hover,
+#settings:hover,
+#score:hover {
     color: #5a1a7a;
     text-shadow: 2px 2px 0 #F0DB4F;
 }
-#loggedindiv #ongoing
-{
+
+#loggedindiv #ongoing {
     border-color: #00FFFF;
 }
-#loggedindiv #attended
-{
+
+#loggedindiv #attended {
     border-color: #00FF00;
 }
-#loggedindiv #missed
-{
+
+#loggedindiv #missed {
     border-color: #FF0000;
 }
+
+
 /********************************************
 Column Styling
 ********************************************/
+
 #cola {
     width: 47.5%;
     float: left;
     margin: 0% 1.25%;
     box-sizing: border-box;
 }
+
 #colb {
     width: 47.5%;
     float: right;
     margin: 0% 1.25%;
     box-sizing: border-box;
 }
+
 #colc {
     width: 90%;
     margin: 0% 5%;
     padding: 0% 5%;
     box-sizing: border-box;
 }
+
 .box {
     width: 85%;
     margin: 5vw auto;
     padding: 2.5% 10%;
     border: 3px solid #F0DB4F;
     box-sizing: border-box;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     background-color: rgb(245, 245, 245);
 }
+
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-
-/* ====================
+    /* ====================
     INTERMEDIATE: Menu
    ==================== */
-
     nav a {
         float: left;
         width: 27%;
@@ -767,61 +760,48 @@ Column Styling
         padding: 25px 2%;
         margin-bottom: 0;
     }
-
     nav li:first-child a {
         margin-left: 0;
     }
-
     nav li:last-child a {
         margin-right: 0;
     }
-
-/* ========================
+    /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
-
     nav ul li {
         display: inline;
     }
-
     .oldie nav a {
         margin: 0 0.7%;
     }
 }
 
 @media only screen and (min-width: 768px) {
-
-/* ====================
+    /* ====================
     WIDE: CSS3 Effects
    ==================== */
-
     .header-container,
     .main aside {
         box-shadow: 0 5px 10px #aaa;
     }
-
-/* ============
+    /* ============
     WIDE: Menu
    ============ */
-
     .title {
         float: left;
     }
-
     nav {
         float: right;
         width: 38%;
     }
-
-/* ============
+    /* ============
     WIDE: Main
    ============ */
-
     .main article {
         float: left;
         width: 57%;
     }
-
     .main aside {
         float: right;
         width: 28%;
@@ -829,16 +809,16 @@ Column Styling
 }
 
 @media only screen and (min-width: 1140px) {
-
-/* ===============
+    /* ===============
     Maximal Width
    =============== */
-
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 1026px;
+        /* 1140px - 10% for margins */
         margin: 0 auto;
     }
 }
+
 
 /* ==========================================================================
    Helper classes
@@ -902,6 +882,7 @@ Column Styling
     *zoom: 1;
 }
 
+
 /* ==========================================================================
    Print styles
    ========================================================================== */
@@ -913,56 +894,45 @@ Column Styling
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     @page {
         margin: 0.5cm;
     }
-
     p,
     h2,
     h4 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h4 {
         page-break-after: avoid;
