@@ -1,8 +1,8 @@
 Big thanks to the MVCS Team and our advisor, Mr. DeRuiter.
 
 /* TEAM */
-    <Oindril Dutta> -- <Developer | Designer> -- <@DuttaOindril>
     <Richard Luo> -- <Developer | Designer> -- <@RichardLuo>
+    <Oindril Dutta> -- <Developer> -- <@DuttaOindril>
 
 /* THANKS */
     <Oindril Dutta>
@@ -13,6 +13,6 @@ Big thanks to the MVCS Team and our advisor, Mr. DeRuiter.
     jQuery, Modernizr, Normalize
                             
 /* SITE */                  
-    Last update: 2019/07/12                          
+    Last update: 2019/07/26                          
     Standards: HTML5, CSS3, JS
     Components: Modernizr, jQuery, Normalize
