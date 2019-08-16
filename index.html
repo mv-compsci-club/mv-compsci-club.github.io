@@ -1,87 +1,96 @@
 ---
 layout: default
 ---
-<h1>welcome to mvcs!</h1>
-<hr>
-<div id="cola">
-    <h2><a href="members.html?f=l">Login</a></h2>
-    <hr>
-    <div class="box">
-        <h4>About us</h4>
-        <hr>
-        <p>Monta Vista Computer Science strives to educate teens about the field of computer science, programming, and their applications to technology and in the real world. Find out more <a href="about.html">here</a>.</p>
-    </div>
-    <!--<div class="box">
-        <h4>Branches</h4>
-        <hr>
-        <p><a href="lecture.html">Lecture Day</a></p>
-        <p><a href="creative.html">Creative Day</a></p>
-        <p><a href="usaco.html">USACO</a></p>
-    </div>-->
+</head>
+<body>
+
+<style>
+  /* ===== Parallax Styling ==================================================
+   ========================================================================== */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg-1, .bgimg-2 {
+  position: relative;
+  opacity: 0.95;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bgimg-1 {
+  background-image: url("../img/bg.webp");
+  height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../img/bg2.jpg");
+  height: 30%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #0f0;
+  margin-top: 10px;
+}
+
+.caption span.border {
+  background-color: none;
+  color: #eee;
+  
+  -webkit-transition: all .25s;
+    transition: all .25s;
+    width: 100%;
+  
+  font-size: 6.5vw;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+  
+.caption span.border:hover {
+    letter-spacing: .05em;
+}
+  
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+  
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">Welcome to MVCS!</span>
+  </div>
 </div>
-<div id="colb">
-    <h2><a href="members.html?f=s">Sign Up</a></h2>
-    <hr>
-    <div class="box">
-        <h4>Latest News</h4>
+
+<h2 style = "margin-top: 8vh;">About Us</h2>
+       <p style = "margin-left: 5vw; margin-right: 5vw; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 1.33rem;">MV Computer Science is, to put it bluntly, the biggest and best tech club of MV. Founded in 2007 as MV Java Club, MVCS (rebranded in 2013) has expanded from teaching the Java programming language to embracing the arts that are computer science, coding, and the integration of both into technologies that make our life tick. Find out more <a href="about.html">here</a>.</p>
+<button class="snip0059 blue" style = "top: auto; margin-bottom: 8vh;" onclick="location.href='https://mailchi.mp/d00df54ef74b/hbzlk1mg17'" type="button">Sign Up!</button>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border">Latest News</span>
+  </div>
+</div>
+
+<div class="box">
+        <h4 style="text-align:center;">MVCS Booting Up for 2019 - 2020</h4>
         <hr>
-        <h5>MVCS Starting Up for the 2nd Semester</h5>
-        <p><em>1/17/2015</em></p>
+        <p><em>8/??/2019</em></p>
         </br>
-        <p>MV Computer Science is starting up this week! Come to our first meeting (Lecture Day) on <b>Wednesday (1/21) lunch</b> in room <b>E203</b></p>
-        <!--<p><a href="#">Check it out!</a></p>-->
-        <hr>
-        <h5>Check out <em>Teen Hackathon</em></h5>
-        <p><em>1/13/2015</em></p>
-        </br>
-        <p>Our very own <em>Oindril Dutta</em> is hosting his own hackathon in March! Check it out <a href="http://teenhackathon.com/">here</a>.</p>
-        <!--<p><a href="#">Check it out!</a></p>-->
-    </div>
-</div
-><br style="clear: both">
-
-<!--
-
-cd C:\Users\Oindril Dutta\Documents\GitHub\mv-compsci-club.github.io
-
-git status && git add -A && git commit -a -m "working on members.html" && git pull origin && git push
-
--->
-
-<!--
-cd C:\Users\Oindril Dutta\Documents\GitHub\gupta-sat-ii
-
-cd C:\Users\Oindril Dutta\Documents\GitHub\gupta-sat-ii && cd bin && rake db:migrate && cd.. && bundle install && rails s
-
-OR
-
-cd C:\Users\Oindril Dutta\Documents\GitHub\gupta-sat-ii && git status && git add -A && git commit -m "fixed modules" && git pull origin && git push && git push heroku master
-
-git status && git add -A && git commit -m "small change" && git pull origin
-
-git push && git push heroku master
-
-git status && git add -A && git commit -m "small change" && git pull origin && git push && git push heroku master
-
-Web.com
-guptachem.com
-chem95014!
-
-http://mail.guptachem.com/ox6/interfaces/sso/
-admin@guptachem.com
-chem95014!
-
-Paypal
-chem95014@gmail.com
-chem95014!
-
-Mandrill
-chem95014@gmail.com
-chem95014!
-
-Use ajax to do the isbuying flag, ask sachin if needed
-
-Use Paypal IPN
-
-6320401151510 - 3:10 April 1st Santa Clara Office
--->
+        <p>MV Computer Science is starting up this week! Come to our first meeting (Lecture Day) on <b>Wednesday (8/??) lunch</b> in room <b>E203</b></p>
+</div>  
+<br style="clear: both">

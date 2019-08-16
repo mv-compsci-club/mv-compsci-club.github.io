@@ -1,15 +1,18 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+Big thanks to the MVCS Team and our advisor, Mr. DeRuiter.
 
-# TEAM
+/* TEAM */
+    <Richard Luo> -- <Developer | Designer> -- <@RichardLuo>
+    <Oindril Dutta> -- <Developer> -- <@DuttaOindril>
 
-    <Oindril Dutta> -- <Developer | Designer> -- <@DuttaOindril>
-
-# THANKS
-
+/* THANKS */
     <Oindril Dutta>
+    <Richard Luo>
 
-# TECHNOLOGY COLOPHON
-
+/* TECHNOLOGY COLOPHON */
     HTML5, CSS3, JS
     jQuery, Modernizr, Normalize
+                            
+/* SITE */                  
+    Last update: 2019/07/26                          
+    Standards: HTML5, CSS3, JS
+    Components: Modernizr, jQuery, Normalize

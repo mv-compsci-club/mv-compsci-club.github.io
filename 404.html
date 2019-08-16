@@ -1,12 +1,159 @@
----
-layout: default
----
-        <h1>404! oops!</h1>
-        <hr>
-        <h2>You weren't supposed to come here...</h2>
-        <br>
-        <h4>Oh well, sign up below!</h4>
-        <br>
-        <h2><a href="members.html?f=s">Sign Up</a></h2>
-        <br>
-        <h4>Or find your way using the buttons above.</h4>
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0"
+        name="viewport">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="The Monta Vista Computer Science Club Official Website"
+        name="description">
+    <meta content="mvcs, club, Monta, Vista, High, School, computer, science, CS,
+        DeRuiter, drootr, programming, java, C++"
+        name="keywords">
+    <title>MVCS | The Comp Sci Club of MV</title>
+    <link href="img/myIcon.ico" rel="shortcut icon" title="MVCS"
+        type="image/x-icon">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <title>RIP 127.0.0.1</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+        rel="stylesheet">
+    <style type="text/css">
+        @keyframes darker {
+            0% {
+                background-position: 0 40vh;
+            }
+
+            100% {
+                background-position: 0 -100px;
+            }
+        }
+
+        body {
+            background: #000 linear-gradient(180deg, #000000, #360B5A, rgb(182, 19, 204), rgb(240, 205, 7));
+            background-position: 0 -100px;
+            background-size: 100% calc(50vh + 230px);
+            background-repeat: no-repeat;
+            color: #1d1f21;
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            transform-style: preserve-3d;
+            perspective: 400px;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            animation-name: darker;
+            animation-duration: 4s;
+            animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+            animation-fill-mode: forwards;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        h1,
+        p {
+            margin: 0;
+        }
+
+        .rel {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        @keyframes flipup {
+            0% {
+                transform: rotateX(140deg);
+            }
+
+            100% {
+                transform: rotateX(0deg);
+            }
+        }
+
+        #tombstone {
+            position: fixed;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 100px 100px 0 0;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.6);
+            padding-top: 50px;
+            background: linear-gradient(180deg, #eeeeee, #cccccc);
+            transform-style: preserve-3d;
+            transform: rotateX(0deg);
+            transform-origin: 100px 250px;
+            animation-name: flipup;
+            animation-duration: 4s;
+            animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+            animation-fill-mode: forwards;
+        }
+
+        #floor {
+            position: fixed;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, #1d1f21, #000000);
+            background-size: 100% 100%;
+            top: calc(50vh + 125px);
+        }
+
+        #back-button {
+            position: fixed;
+            margin: auto;
+            top: calc(50vh + 150px);
+            left: 25px;
+            width: 48px;
+            height: 48px;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="marker"></div>
+    <header id="header">
+        <a href="about.html" class="navlink"><h4>About</h4></a>
+        <a href="news.html" class="navlink"><h4>News</h4></a>
+        <a href="index.html"><img src="img/Logo.png"></a>
+        <a href="FAQ.html" class="navlink"><h4>FAQ</h4></a>
+        <a href="resources.html" class="navlink"><h4>Resources</h4></a>
+    </header>
+
+    <br><br>
+    <div id="tombstone">
+        <h1>F</h1><br>
+        <p style="font-weight: 700; font-size: 18px;">Go 127.0.0.1</p>
+        <p>Ooof</p>
+        <p>You 404'd.</p>
+    </div>
+    <div id="floor"></div>
+    <div id="back-button">
+        <a href="javascript:back();">
+            <svg fill="#ffffff" height="48" viewBox="0 0 24 24" width="48"
+                xmlns="index.html">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83
+                    13H20v-2z" />
+            </svg>
+        </a>
+    </div>
+    <script type="text/javascript">
+        function back() {
+            if (!window.history.back()) {
+                setTimeout(function () {
+                    window.location = "https://maki.cat";
+                }, 100);
+            }
+        }
+    </script>
+</body>
