@@ -1,4 +1,74 @@
----
+<body>
+
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg-2 {
+  position: relative;
+  opacity: 0.95;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.bgimg-2 {
+  background-image: url("../img/bg2.jpg");
+  height: 30%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #0f0;
+  margin-top: 10px;
+}
+
+.caption span.border {
+  background-color: none;
+  color: #0000FF;
+  
+  -webkit-transition: all .25s;
+    transition: all .25s;
+    width: 100%;
+  
+  font-size: 6.5vw;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+  
+.caption span.border:hover {
+    letter-spacing: .05em;
+}
+  
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+   .bgimg-2 {
+    background-attachment: scroll;
+  }
+}
+</style>
+  
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border">ACSL</span>
+  </div>
+</div> 
+</body>
+
+
+<!-- ---
 layout: default
 ---
 <div id="cola1">
@@ -88,4 +158,4 @@ layout: default
         <br style="clear: both;">
     </div>
 </div>
-<br style="clear: both">
+<br style="clear: both"> -->
