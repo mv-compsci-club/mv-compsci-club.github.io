@@ -130,6 +130,26 @@ body, html {
         <br>
         <p>Website Design by Richard Luo in 2019.</p>
         <p>&copy;2019-2020 MVCS. All rights reserved.</p>
+				<div id="cn1">
+</div>
+
+<script>
+var n1 = localStorage.getItem('on_load_counter1');
+
+if (n1 === null) {
+  n1 = 0;
+}
+n1++;
+
+localStorage.setItem("on_load_counter1", n1);
+
+nums1 = n1.toString().split('').map(Number);
+document.getElementById('cn1').innerHTML = '';
+for (var i1 of nums1) {
+  document.getElementById('cn1').innerHTML+= '<span class="cn1">' + i1 + '</span>' ;
+}
+
+</script>
         <br>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
