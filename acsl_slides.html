@@ -115,7 +115,50 @@ body, html {
   </div>
 </div> 
 
-<!--	<script>
+
+<div>
+      <iframe
+        src="https://drive.google.com/file/d/1bL_LXObakonfmYduA944IUosSxhdFRHM/preview"
+        width="0"
+        height="0"
+        id="frame"
+      ></iframe>
+	  <iframe
+	  src="https://drive.google.com/file/d/1dze6um19FSwqlcit3Nh-YBWC4S9IZpZS/preview"
+        width="0"
+        height="0"
+        id="frame2"
+      ></iframe>
+    </div>
+	
+ <button id="contest1">Contest 1</button>
+<button id="contest2">Contest 2</button>
+
+  <script>
+	  console.log("hi");
+      const button = document.querySelector('#contest1');
+	  const button2 = document.querySelector('#contest2');
+      const iframe = document.querySelector('#frame');
+	  const iframe2 = document.querySelector('#frame2');
+      //button.addEventListener('click', () => {
+        //iframe.classList.toggle('invisible');
+      //});
+	  button.addEventListener('click', () => {
+		iframe.width = "300";
+		iframe.height = "300";
+		iframe2.width = "0";
+		iframe2.height = "0";
+	  });
+	  button2.addEventListener('click', () => {
+		iframe.width = "0";
+		iframe.height = "0";
+		iframe2.width = "300";
+		iframe2.height = "300";
+	  });
+    </script>
+	
+	<!--
+	<script>
 	    console.log("hi");
       const button = document.querySelector('#contest1');
 	  const button2 = document.querySelector('#contest2');
@@ -135,7 +178,6 @@ body, html {
 	  });
     </script> 
 
-	
 <h2>
 <button class="snip0059 blue" id="contest1" style = "top: auto; margin-bottom: 8vh;" type="button">Contest 1</button>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -148,6 +190,7 @@ body, html {
 -->
 	
 
+	<!--
 <br>
   <iframe src="https://drive.google.com/file/d/1bL_LXObakonfmYduA944IUosSxhdFRHM/preview" width="300" height="300"></iframe>
 &nbsp; &nbsp;
@@ -165,7 +208,7 @@ body, html {
 	<iframe src="https://drive.google.com/file/d/1w6_X5Td3ienJeN7lFVCcYzK-ujHlPK2_/preview" width="300" height="300"></iframe>
 	&nbsp; &nbsp;
 	<iframe src="https://drive.google.com/file/d/1SgcRM4yyaYoSheiC1kc6TCyTeiMfiydQ/preview" width="300" height="300"></iframe>&nbsp; &nbsp;
-	<iframe src="https://drive.google.com/file/d/1V5L3EZgzm33E1TOZN6Rc3OJkOCrgRBZ2/preview" width="300" height="300"></iframe> 
+	<iframe src="https://drive.google.com/file/d/1V5L3EZgzm33E1TOZN6Rc3OJkOCrgRBZ2/preview" width="300" height="300"></iframe>  -->
   </body>
   <br style="clear: both;">
 
