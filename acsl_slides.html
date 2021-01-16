@@ -116,7 +116,14 @@ body, html {
 </div> 
 
 
-<div>
+
+<h2>
+<button class="snip0059 blue" id="contest1" style = "top: auto; margin-bottom: 8vh;" type="button">Contest 1</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="snip0059 blue" id="contest2" style = "top: auto; margin-bottom: 8vh;" type="button">Contest 2</button>
+    </h2>  
+
+	<div>
       <iframe
         src="https://drive.google.com/file/d/1bL_LXObakonfmYduA944IUosSxhdFRHM/preview"
         width="0"
@@ -130,20 +137,18 @@ body, html {
         id="frame2"
       ></iframe>
     </div>
+
 	
- <button id="contest1">Contest 1</button>
-<button id="contest2">Contest 2</button>
+	
+<!--<button id="contest1">Contest 1</button>
+<button id="contest2">Contest 2</button>-->
 
   <script>
-	  console.log("hi");
       const button = document.querySelector('#contest1');
 	  const button2 = document.querySelector('#contest2');
       const iframe = document.querySelector('#frame');
 	  const iframe2 = document.querySelector('#frame2');
-      //button.addEventListener('click', () => {
-        //iframe.classList.toggle('invisible');
-      //});
-	  button.addEventListener('click', () => {
+ 	  button.addEventListener('click', () => {
 		iframe.width = "300";
 		iframe.height = "300";
 		iframe2.width = "0";
