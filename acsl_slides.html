@@ -113,7 +113,14 @@
             height: 0px;
             visibility: hidden;
         }
-        
+	    
+        .frame_contest3
+        {
+            width: 0px;
+            height: 0px;
+            visibility: hidden;
+        }
+	    
         @media only screen and (max-device-width: 1024px) 
         {
             .bgimg-2 
@@ -131,9 +138,11 @@
         
     <h2>
         <button class = "snip0059 blue" id ="button_contest1" style = "top: auto; margin-bottom: 8vh;" type = "button">Contest 1</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
         <button class = "snip0059 blue" id = "button_contest2" style = "top: auto; margin-bottom: 8vh;" type = "button">Contest 2</button>
-    </h2>  
+	&nbsp;&nbsp;&nbsp;
+	<button class = "snip0059 blue" id = "button_contest3" style = "top: auto; margin-bottom: 8vh;" type = "button">Contest 3</button>
+     </h2>  
 
     <div>
         <!-- Contest 1 -->
@@ -152,24 +161,34 @@
         <iframe src="https://drive.google.com/file/d/1V5L3EZgzm33E1TOZN6Rc3OJkOCrgRBZ2/preview" class = "frame_contest2"></iframe>
 	<iframe src="https://drive.google.com/file/d/1npnmQt3gwPUUiGCgUZYD7WYvuyPbkTPJ/preview" class = "frame_contest2"></iframe>
         <iframe src="https://drive.google.com/file/d/1qFJbdO8TGx36rjQNV3MtfeBiOyWpbdLk/preview" class = "frame_contest2"></iframe>
-        <iframe src="https://drive.google.com/file/d/1G4Y5iO2Up5E0E8Lldl9q9dBtuJM-BmtL/preview" class = "frame_contest2"></iframe>	    
+        <iframe src="https://drive.google.com/file/d/1G4Y5iO2Up5E0E8Lldl9q9dBtuJM-BmtL/preview" class = "frame_contest2"></iframe>
+	
+	<!-- Contest 3 -->
+	<iframe src="https://drive.google.com/file/d/1pBa8MBkDGC-1f-TrLUWQU0gvO7FW8dA1/preview" class = "frame_contest3"></iframe>
      </div>
 
     <script>
         const button = document.querySelector('#button_contest1');
         const button2 = document.querySelector('#button_contest2');
+	const button3 = document.querySelector('#button_contest3');
         const contest1 = document.getElementsByClassName('frame_contest1');
         const contest2 = document.getElementsByClassName('frame_contest2');
+	const contest3 = document.getElementsByClassName('frame_contest3');
         button.addEventListener('click', () => 
         {
-            set(contest1, contest2, "300px", "300px", "0px", "0px");
+            set(contest1, contest2, contest3, "300px", "300px", "0px", "0px", "0px", "0px");
         });
         button2.addEventListener('click', () => 
         {
-            set(contest1, contest2, "0px", "0px", "300px", "300px");
+            set(contest1, contest2, contest3, "0px", "0px", "300px", "300px", "0px", "0px");
         });
-
-        function set(contest1, contest2, width1, height1, width2, height2)
+	
+	button3.addEventListener('click', () => 
+        {
+            set(contest1, contest2, contest3, "0px", "0px", "0px", "0px", "300px", "300px");
+        });
+	   
+        function set(contest1, contest2, contest3, width1, height1, width2, height2, width3, height3)
         {
             for (var i = 0; i < contest1.length; i++) 
             {
@@ -190,7 +209,16 @@
                 else
                     contest2[i].style.visibility = "visible";
             }
-
+		
+	    for(var i = 0; i < contest3.length; i++)
+            {
+                contest3[i].style.width = width3;
+                contest3[i].style.height = height3;
+                if(width3 == "0px")
+                    contest3[i].style.visibility = "hidden";
+                else
+                    contest3[i].style.visibility = "visible";
+            }
         }
     </script>
 
