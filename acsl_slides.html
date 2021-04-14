@@ -194,18 +194,23 @@
 	    
         button.addEventListener('click', () => 
         {
-            set(contest1, contest2, contest3, "300px", "300px", "0px", "0px", "0px", "0px");
+            set(contest1, contest2, contest3, contest4, "300px", "300px", "0px", "0px", "0px", "0px", "0px", "0px");
         });
         button2.addEventListener('click', () => 
         {
-            set(contest1, contest2, contest3, "0px", "0px", "300px", "300px", "0px", "0px");
+            set(contest1, contest2, contest3, contest4, "0px", "0px", "300px", "300px", "0px", "0px", "0px", "0px");
         });
 	
 	button3.addEventListener('click', () => 
         {
-            set(contest1, contest2, contest3, "0px", "0px", "0px", "0px", "300px", "300px");
+            set(contest1, contest2, contest3, contest4, "0px", "0px", "0px", "0px", "300px", "300px", "0px", "0px");
         });
-	   
+	    
+	button4.addEventListener('click', () => 
+        {
+            set(contest1, contest2, contest3, contest4, "0px", "0px", "0px", "0px", "0px", "0px", "300px", "300px");
+        });
+	    
         function set(contest1, contest2, contest3, contest4, width1, height1, width2, height2, width3, height3, width4, height4)
         {
             for (var i = 0; i < contest1.length; i++) 
