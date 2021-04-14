@@ -121,6 +121,13 @@
             visibility: hidden;
         }
 	    
+	.frame_contest4
+	{
+	    width: 0px;
+	    height: 0px;
+            visibilit: hidden;
+	}
+	    
         @media only screen and (max-device-width: 1024px) 
         {
             .bgimg-2 
@@ -142,6 +149,8 @@
         <button class = "snip0059 blue" id = "button_contest2" style = "top: auto; margin-bottom: 8vh;" type = "button">Contest 2</button>
 	&nbsp;&nbsp;&nbsp;
 	<button class = "snip0059 blue" id = "button_contest3" style = "top: auto; margin-bottom: 8vh;" type = "button">Contest 3</button>
+	&nbsp;&nbsp;&nbsp;
+	<button class = "snip0059 blue" id = "button_contest4" style = "top: auto; margin-bottom: 8vh;" type = "button">Contest 4/button>
      </h2>  
 
     <div>
@@ -168,15 +177,21 @@
 	<iframe src="https://drive.google.com/file/d/16dPDteeDoR4fkxVJoWoROeKBAH5Ewfn3/preview" class = "frame_contest3"></iframe>
         <iframe src="https://drive.google.com/file/d/1Av3fKeqls2OR-NBKf8zBFBq3Tj6RD2mL/preview" class = "frame_contest3"></iframe>
 	<iframe src="https://drive.google.com/file/d/1FFrcZxKujTaIFTmc1CFETzrxtopnSYcp/preview" class = "frame_contest3"></iframe>
+	    
+	<!-- Contest 4-->
+	<iframe src="https://drive.google.com/file/d/1Y4vhlief9UiMPUxEZ8S2WeksBV7ip_lt/preview" class = "frame_contest4"></iframe>
      </div>
 
     <script>
         const button = document.querySelector('#button_contest1');
         const button2 = document.querySelector('#button_contest2');
 	const button3 = document.querySelector('#button_contest3');
+	const button4 = document.querySelector("#button_contest4');
         const contest1 = document.getElementsByClassName('frame_contest1');
         const contest2 = document.getElementsByClassName('frame_contest2');
 	const contest3 = document.getElementsByClassName('frame_contest3');
+	const contest4 = document.getElementsByClassName('frame_contest4');
+	    
         button.addEventListener('click', () => 
         {
             set(contest1, contest2, contest3, "300px", "300px", "0px", "0px", "0px", "0px");
@@ -191,7 +206,7 @@
             set(contest1, contest2, contest3, "0px", "0px", "0px", "0px", "300px", "300px");
         });
 	   
-        function set(contest1, contest2, contest3, width1, height1, width2, height2, width3, height3)
+        function set(contest1, contest2, contest3, contest4, width1, height1, width2, height2, width3, height3, width4, height4)
         {
             for (var i = 0; i < contest1.length; i++) 
             {
@@ -221,6 +236,16 @@
                     contest3[i].style.visibility = "hidden";
                 else
                     contest3[i].style.visibility = "visible";
+            }
+		
+            for(var i = 0; i < contest4.lenght; i++)
+            {
+                contest4[i].style.width = width4;
+                contest4[i].style.height = height4;
+                if(width4 == "0px")
+                    contest4[i].style.visibility = "hidden";
+                else
+                    contest4[i].style.visibility = "visible";
             }
         }
     </script>
