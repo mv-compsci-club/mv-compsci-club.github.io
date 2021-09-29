@@ -156,8 +156,8 @@
     <div> 
      <!--    Contest 1 -->
        <iframe src="https://drive.google.com/file/d/1bL_LXObakonfmYduA944IUosSxhdFRHM/preview" class = "frame_contest1"></iframe>
-     <!--   <iframe src="https://drive.google.com/file/d/1dze6um19FSwqlcit3Nh-YBWC4S9IZpZS/preview" class = "frame_contest1"></iframe>
-        <iframe src="https://drive.google.com/file/d/1E_qAD8D3AUGvFr4lcTB2jDeV5HyLhFjv/preview" class = "frame_contest1"></iframe>
+       <iframe src="https://drive.google.com/file/d/1dze6um19FSwqlcit3Nh-YBWC4S9IZpZS/preview" class = "frame_contest1"></iframe>
+     <!--   <iframe src="https://drive.google.com/file/d/1E_qAD8D3AUGvFr4lcTB2jDeV5HyLhFjv/preview" class = "frame_contest1"></iframe>
         <iframe src="https://drive.google.com/file/d/1Kvk95i7eMcxz4bYFWkvMZfRXypAekfJ5/preview" class = "frame_contest1"></iframe>
         <iframe src="https://drive.google.com/file/d/16D0u4kou7ub3RPKDI62TMnfpSs-E2ypg/preview" class = "frame_contest1"></iframe>
         <iframe src="https://drive.google.com/file/d/1xewR7yah9VuMsKf2s0WVy_sc-CZj7gll/preview" class = "frame_contest1"></iframe>
@@ -186,19 +186,20 @@
 
   <script>
         const button = document.querySelector('#button_contest1');
-      const button2 = document.querySelector('#button_contest2');
+<!--      const button2 = document.querySelector('#button_contest2');
 	const button3 = document.querySelector('#button_contest3');
-	const button4 = document.querySelector('#button_contest4');
+	const button4 = document.querySelector('#button_contest4'); -->
         const contest1 = document.getElementsByClassName('frame_contest1');
-        const contest2 = document.getElementsByClassName('frame_contest2');
+   <!--     const contest2 = document.getElementsByClassName('frame_contest2');
 	const contest3 = document.getElementsByClassName('frame_contest3');
-	const contest4 = document.getElementsByClassName('frame_contest4'); 
+	const contest4 = document.getElementsByClassName('frame_contest4'); -->
 	    
         button.addEventListener('click', () => 
         {
-            set(contest1, contest2, contest3, contest4, "300px", "300px", "0px", "0px", "0px", "0px", "0px", "0px");
+        <!--    set(contest1, contest2, contest3, contest4, "300px", "300px", "0px", "0px", "0px", "0px", "0px", "0px"); -->
+		set(contest1,  "300px", "300px");
         });
-       button2.addEventListener('click', () => 
+     <!--  button2.addEventListener('click', () => 
         {
             set(contest1, contest2, contest3, contest4, "0px", "0px", "300px", "300px", "0px", "0px", "0px", "0px");
         });
@@ -211,9 +212,10 @@
 	button4.addEventListener('click', () => 
         {
             set(contest1, contest2, contest3, contest4, "0px", "0px", "0px", "0px", "0px", "0px", "300px", "300px");
-        }); 
+        }); -->
 	    
-        function set(contest1, contest2, contest3, contest4, width1, height1, width2, height2, width3, height3, width4, height4)
+        <!-- function set(contest1, contest2, contest3, contest4, width1, height1, width2, height2, width3, height3, width4, height4) -->
+	function set(contest1, width1, height1)
         {
             for (var i = 0; i < contest1.length; i++) 
             {
@@ -225,7 +227,7 @@
                     contest1[i].style.visibility = "visible";
             }
 
-            for(var i = 0; i < contest2.length; i++)
+       <!--     for(var i = 0; i < contest2.length; i++)
             {
                 contest2[i].style.width = width2;
                 contest2[i].style.height = height2;
@@ -253,7 +255,7 @@
                     contest4[i].style.visibility = "hidden";
                 else
                     contest4[i].style.visibility = "visible";
-            } 
+            }  -->
         }
     </script> 
 
